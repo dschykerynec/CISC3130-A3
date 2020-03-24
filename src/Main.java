@@ -4,38 +4,9 @@ import java.util.Stack;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
-		/*MovieBST list = new MovieBST();
-		
-		String[] a = {"a", "b", "c"};
-		
-		list.insert("d", 1000, a, 11);
-		System.out.println(list.display());
-		System.out.println();
-		
-		list.insert("g", 2000, a, 22);
-		System.out.println(list.display());
-		System.out.println();
-		
-		list.insert("f", 3000, a, 32);
-		System.out.println(list.display());
-		System.out.println();
-		
-		list.insert("", 4000, a, 44);
-		System.out.println(list.display());
-		System.out.println();
-		
-		list.insert("a", 5000, a, 55);
-		System.out.println(list.display());
-		System.out.println();
-		
-		list.insert("b", 6000, a, 66);
-		System.out.println(list.display());
-		
-		System.out.println(list.subset("c", "c"));		*/
-		
-		File file = new File("movieFiles/movies.csv");
+		File file = new File("../movieFiles/movies.csv");
 		BufferedReader in = new BufferedReader(new FileReader(file));
-		PrintWriter out = new PrintWriter(new File("outputFile.txt"));
+		PrintWriter out = new PrintWriter(new File("../outputFile.txt"));
 		
 		MovieBST films = new MovieBST();
 		
